@@ -15,7 +15,8 @@ public class BrowserstackDriver implements WebDriverProvider {
     @Nonnull
     @Override
     public WebDriver createDriver(@Nonnull Capabilities capabilities) {
-        MutableCapabilities mutableCapabilities = new MutableCapabilities();
+        MutableCapabilities mutableCapabilities = new MutableCapabilities(); // todo move to UiAutomator2Options
+
 
         // Set your access credentials
         mutableCapabilities.setCapability("browserstack.user", "mobile_nbwJlO");
